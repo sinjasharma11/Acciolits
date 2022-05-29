@@ -1,1 +1,1 @@
-web: gunicorn recommendation_system:app
+web: gunicorn recsys:app
