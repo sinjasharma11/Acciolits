@@ -81,9 +81,12 @@ nav ul div.navitems{
     width: 100%;
 }
 
-.searchead{
+.headsearch{
     text-align: center;
     width: 100%;
+    margin-bottom: 30px;
+    align-items: center;
+    align-content: center;
 }
 
 p{
@@ -129,9 +132,6 @@ h1{
 
 /*main page content begins here*/
 
-.mean{
-    height: 50px;
-}
 .scrollmain{
     display: flex;
     overflow-x:scroll;
@@ -262,3 +262,7 @@ h1{
 }
 
 /*footer content ends here*/
+
+.clearfix{
+    height: 150px;
+}
