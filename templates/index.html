@@ -1,0 +1,262 @@
+<html>
+   <!--Title as Acciolits-->
+   <head>
+      <title>Acciolits</title>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@100&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="{{ url_for('static',filename='styles/homepage.css') }}">
+      <script src="https://kit.fontawesome.com/8cab6fe611.js" crossorigin="anonymous"></script>
+   </head>
+
+   <!--Body begins-->
+
+   <body>
+       <!--Header n Nav-->
+      <div class="recs">
+         <header>
+            <div class="logomain" href="">Acciolits</div>
+            <nav>
+               <ul>
+                  <div class= "navitems">
+                     <li><a href="index.html" class="navs" target="_blank" >Home</a></li>
+                     <li><a href=""  class="navs" target="_blank" >My Books</a></li>
+                     <li><a href="" class="navs" target="_blank" >Community</a></li>
+                  </div>
+               </ul>
+            </nav>
+         </header>
+      </div>
+      <!--Header n Nav end-->
+
+      <div class="clearfix"></div>
+
+       <!--Search box-->
+      <div class="headsearch">
+         <form action="{{url_for('search_books')}}">
+            <h3 class="searchead">Search your Book Here</h3>
+            <div class="form-box">
+               <input type="text" class="search" name="book" placeholder="Search..">
+               <button class="search-btn" target="_blank" type="submit">Search</button>
+            </div>
+         </form>
+      </div>
+      <!--Search box ends-->
+
+      <!--Quotes-->
+      <marquee loop="infinite">
+         <div class="quote">
+            <h2> <br><br><b>“Once I began to read, I began to exist. I am what I read.”</b> ~ Walter Dean Myers
+               &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; ❤ &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+               <b>“A well-read woman is a dangerous creature.”</b> ~ Lisa Kleypas
+               &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; ❤ &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+               <b>“When I have a house of my own, I shall be miserable if I have not an excellent library.”</b> ~ Jane Austen
+               &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; ❤ &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; 
+               <b>“In the end, we will all become stories.”</b> ~ Margaret Atwood
+               &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; ❤ &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;
+            </h2>
+         </div>
+      </marquee>
+      <div class="clearfix"></div>
+      <!--Quotes end-->
+
+      <!--Main Body-->
+      {{book}}
+      <div class="clearfix"> </div>
+      <br>
+      <div>
+        <!--Each category-->
+         <div>
+            <div class="heading">
+               <h3> Best reads in Fantasy</h3>
+            </div>
+            <div class="scrollmain">
+               <div class="child">
+                  <a href=" "><img class="childimage" src=https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SY475_.jpg></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562726234l/13496.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1486871542l/3263607._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1270352123l/186074.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1353029077l/100915.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1400602609l/28187.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1651710803l/23437156.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1620325671l/50659468._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1495278054l/7896527.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1387124618l/9361589.jpg"></a>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="heading">
+               <h3> Best reads in Romance</h3>
+            </div>
+            <div class="scrollmain">
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320399351l/1885.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1632632557l/11870085.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1361039443l/41865.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1467138679l/25883848._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566742512l/41150487._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1527983633l/36199084._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1611937942l/56732449.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1385207843l/10818853.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1631688766l/17347634._SX318_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1470427482l/27362503._SY475_.jpg"></a>
+               </div>
+            </div>
+         </div>
+         <div>
+            <div class="heading">
+               <h3> Best reads in Crime/Thriller</h3>
+            </div>
+            <div class="scrollmain">
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1574805682l/22557272.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1486131451l/853510._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554086139l/19288043.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579621267l/968.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327868566l/2429135.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1639587647l/960.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1638425885l/16299._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1540217136l/16160797.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562761513l/2459785._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1475695315l/18045891.jpg"></a>
+               </div>
+            </div>
+         </div>
+         <!-- <div>
+            <div class="heading"><h3> Popular Genre</h3></div>
+               
+            <div class="scrollmain">
+                    <div class="child2">
+                        <a href=" " id="c1"><img src="https://drive.google.com/file/d/173qfjTiFnW9ah0664Boq8wt5sqbUqgQu/view?usp=sharing"class="d1"></a>
+                    </div>
+                    <div class="child2">
+                        <a href=" " id="c2"><img src="https://drive.google.com/file/d/173qfjTiFnW9ah0664Boq8wt5sqbUqgQu/view?usp=sharing" class="d1"></a>
+                    </div>
+                    <div class="child2">
+                        <a href=" " id="c3"><img src="https://drive.google.com/file/d/1vyflpsIyrNELc2qENNxwx6uU7DxEZdty/view?usp=sharing" class="d1"></a>
+                    </div>
+                    <div class="child2">
+                        <a href=" " id="c4"><img src="https://drive.google.com/file/d/1pETJew0w6AcRorbII2pf8V3MQ3qIbzaJ/view?usp=sharing" class="d1"></a>
+                    </div>
+                    <div class="child2">
+                        <a href=" " id="c5"><img src="https://drive.google.com/file/d/1S_kZZ8pObcffMYOHo_0o_tU5hDFkIHXd/view?usp=sharing" class="d1"></a>
+                    </div>
+            </div>
+            </div> -->
+         <div>
+            <div class="heading">
+               <h3> Best books of all times</h3>
+            </div>
+            <div class="scrollmain">
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553383690l/2657.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1474154022l/3._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1320399351l/1885.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1560816565l/48855.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1566425108l/33.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1522157426l/19063._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1629680008l/18135._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1579036753l/77203._SY475_.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1586722975l/2767052.jpg"></a>
+               </div>
+               <div class="child">
+                  <a href=" "><img class="childimage" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630501681l/6185._SY475_.jpg"></a>
+               </div>
+            </div>
+         </div>
+         <!--Main Body ends-->
+
+         <!--Footer-->
+         <div width=100%>
+            <footer id="C7">
+               <div class="container_footer">
+                  <div class="contact">
+                     <h2>Contact</h2>
+                  </div>
+                  <div class="social_links">
+                     <a href="https://www.facebook.com/sinja.sharma.39"><img class="icon" src="https://img.icons8.com/ios-filled/344/facebook-new.png" target="_blank"></a>
+                     <a href="https://instagram.com/sinja_sharma/"><img class="icon" src="https://img.icons8.com/ios-glyphs/344/instagram-new.png" target="_blank"></a>
+                     <a href="https://www.linkedin.com/in/sinja-sharma-5a3855232/"><img class="icon" src="https://img.icons8.com/ios-filled/344/linkedin.png" target="_blank"></a>
+                     <a href="mailto:sinjasharma11@gmail.com"><img class="icon" src="https://img.icons8.com/material-sharp/344/mail.png" target="_blank">\</a>
+                  </div>
+                  <div class="finish">
+                     <h5>© Acciolits, All rights reserved</h5>
+                     <h5>Designed and developed with ♥ by <strong>Sinja Sharma</strong></h5>
+                  </div>
+               </div>
+            </footer>
+         </div>
+         <!--Footer ends-->
+      </div>
+   </body>
+</html>

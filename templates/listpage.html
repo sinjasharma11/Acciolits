@@ -1,0 +1,181 @@
+<html>
+   <!--Title of the page 2 as Books List- Acciolits-->
+   <head>
+      <title>Books List- Acciolits</title>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Allura&family=Lato:wght@100&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/8cab6fe611.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="{{ url_for('static',filename='styles/listpage.css') }}">
+   </head>
+   <!--Title of the page 2 ends-->
+   <!--beginning of body-->
+   <body>
+      <!--navigation begins-->
+      <div class="recs">
+         <header>
+            <div class="logomain" href="">Acciolits</div>
+            <nav>
+               <ul>
+                  <div class= "navitems">
+                     <li><a href="index.html" class="navs" target="_blank" >Home</a></li>
+                     <li><a href=""  class="navs"  >My Books</a></li>
+                     <li><a href="" class="navs"  >Community</a></li>
+                  </div>
+               </ul>
+            </nav>
+         </header>
+      </div>
+      <div class="clearfix">  </div>
+      <div class="bet"></div>
+      <!--navigation begins-->
+      <!--if the choice is not found in dataset-->
+      {%if s == 'opps'%}
+      <div class="choice">
+         <h4><b> {{book}}</b></h4>
+         <h3>Please search another book.</h3>
+      </div>
+      <!--or else the choice id found and we print the recommendations-->
+      {%else%}
+      <!--the choice user enters-->  
+      <div class="heading">
+         <h2>
+         Books similar to <b>{{book[0]}}</b></h3>
+      </div>
+      <!--printing recommendations - name and cover page-->  
+      <div class="allbooks">
+         <!--recommendation 1-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[1] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[1]}} </h4>
+            </div>
+         </div>
+         <!--recommendation 2-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[2] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[2]}} </h4>
+               </p>
+            </div>
+         </div>
+         <!--recommendation 3-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[3] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[3]}} </h4>
+            </div>
+         </div>
+         <!--recommendation 4-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[4] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[4]}} </h4>
+            </div>
+         </div>
+         <!--recommendation 5-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[5] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[5]}} </h4>
+            </div>
+         </div>
+         <!--recommendation 6-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[6] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[6]}} </h4>
+            </div>
+         </div>
+         <!--recommendation 7-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[7] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[7]}} </h4>
+            </div>
+         </div>
+         <!--recommendation 8-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[8] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[8]}} </h4>
+            </div>
+         </div>
+         <!--recommendation 9-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[9] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[9]}} </h4>
+               </p>
+            </div>
+         </div>
+         <!--recommendation 10-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[10] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[10]}} </h4>
+            </div>
+         </div>
+         <!--recommendation 11-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[11] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[11]}} </h4>
+            </div>
+         </div>
+         <!--recommendation 12-->
+         <div class="gallery">
+            <a  href="">
+            <img src="{{ pics[12] }}" class="coverimg" alt="Cover not found">
+            </a>
+            <div class="desc">
+               <h4> {{book[12]}} </h4>
+            </div>
+         </div>
+      </div>
+      <!--recommendations end here-->
+      {%endif%}    
+      <div class="clearfix"></div>
+      <!--footer begins--> 
+      <div class="footer">
+         <div class="container_footer">
+            <div class="contact">
+               <h2>Contact</h2>
+            </div>
+            <div class="social_links">
+               <a href="https://www.facebook.com/sinja.sharma.39"><img class="icon" src="https://img.icons8.com/ios-filled/344/facebook-new.png" target="_blank"></a>
+               <a href="https://instagram.com/sinja_sharma/"><img class="icon" src="https://img.icons8.com/ios-glyphs/344/instagram-new.png" target="_blank"></a>
+               <a href="https://www.linkedin.com/in/sinja-sharma-5a3855232/"><img class="icon" src="https://img.icons8.com/ios-filled/344/linkedin.png" target="_blank"></a>
+               <a href="mailto:sinjasharma11@gmail.com"><img class="icon" src="https://img.icons8.com/material-sharp/344/mail.png" target="_blank">\</a>
+            </div>
+            <div class="finish">
+               <h5>© Acciolits, All rights reserved</h5>
+               <h5>Designed and developed with ♥ by <strong>Sinja Sharma</strong></h5>
+            </div>
+         </div>
+      </div>
+      <!--footer ends-->
+   </body>
+   <!--end of body-->
+</html>

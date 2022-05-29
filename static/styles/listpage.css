@@ -1,0 +1,207 @@
+body{
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+}
+
+
+.logomain{
+    margin-left: 27%;
+    float: left;
+}
+
+
+/*header/nav starts here*/
+
+.logomain{
+    margin-left: 3%;    
+    float: left;
+    font-size: 68px;
+    font-family: 'Allura', cursive;
+}
+
+header{
+    
+    width: 90%;
+    position:fixed;
+    background : #D5EEF2;
+    padding-left: 3%;
+    padding-right: 10%;
+    margin-bottom: 50px;
+    
+} 
+
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-style: none;
+    float: right;
+}
+
+nav ul div.navitems{
+    
+    display: inline-flex;
+      
+}
+
+.navs{  
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    float: right;
+    color: black;
+    font-weight: bolder;
+    
+       
+}
+
+.navs:hover{  
+    color:#1F375D;
+    border-bottom-color: #1F375D;
+    border-bottom-style:solid;
+    border-width: thin;       
+}
+
+.navs:active{  
+    color:#1F375D;
+    border-bottom-color: #1F375D;
+    border-bottom-style:solid;
+    border-width: thin;       
+}
+
+
+/*header ends here*/
+
+
+/*book not found*/
+
+
+.choice{
+    justify-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/*book found*/
+
+/*body begin*/
+
+/*body begin*/
+
+.bet{
+  height: 70px;
+}
+
+.heading
+{
+    margin: 50px 40px 20px 40px;
+}
+
+.allbooks{
+    width: 90%;
+    margin-left: 7%;
+}
+
+
+.gallery {
+  border: 2px solid #D5EEF2;
+  float: left;
+  width: 240px;
+  height: 310px;
+  margin: 10px 13px 20px 12px;
+}
+
+.gallery:hover {
+  border: 2px solid #000000;
+}
+
+.coverimg{
+  width: 160px;
+  height: 240px;
+  margin: 15px 40px 0px 40px;
+}
+
+.desc {
+  width: 220px;
+  margin: 0px 10px 0px 10px;
+  height: 39px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p{
+  margin: -5px;
+  overflow: -moz-hidden-unscrollable;
+}
+
+/*body ends*/
+
+/*footer begins*/
+
+.footermain{
+    width: 100%;
+}
+
+.container_footer {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  padding:10px; 
+  background-color: #D5EEF2;
+}
+.footer {
+  background-color: #D5EEF2;
+  width: 100%;
+}
+
+/* CSS for social media icons */
+.social_links {
+  display: flex;
+  justify-content: center;
+}
+.social_links a {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #D5EEF2;
+  margin: 10px 0px 0px 0px;
+  height: 60px;
+  width: 30px;
+  color: white;
+}
+
+.contact{
+    text-align: center;
+}
+
+
+.icon{
+    height: 25px;
+    width: auto;
+}
+
+.finish {
+  color: black;
+  margin-top: 0px;
+  padding: 0px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+/*footer ends*/
+
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear:both
+}
+
+
+
+
+    
