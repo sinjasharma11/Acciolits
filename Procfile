@@ -1,1 +1,1 @@
-web: gunicorn recsys:app --log-file=-
+web: gunicorn recsys:app
